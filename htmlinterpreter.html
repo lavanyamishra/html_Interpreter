@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>html interpreter</title>
+</head>
+
+
+
+<script>
+
+function lw() 
+{
+x = document.getElementById("d1");
+
+
+z = document.getElementById("d3");
+
+
+
+x.innerHTML = z.value;
+
+
+
+
+}
+function exit()
+{
+ alert('Thanks For Visiting');
+}
+
+</script>
+
+
+<style>
+
+
+*{
+background-color:#34495E;}
+
+div#d1{
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+border:30px groove #E5E8E8;
+width:350px;
+height:175px;
+background:pink;
+font-size:20px;
+}
+#s1{
+color:#FDFEFE;
+font-size:25px;
+
+}
+#s2{
+color:#FDFEFE;
+font-size:25px;
+}
+#d3{
+padding:0px;
+ display: block;
+    margin-left: auto;
+    margin-right: auto;
+   background-color:#ABEBC6;
+border:30px double #E5E8E8;
+font-size:20px;
+}
+
+
+
+</style>
+
+
+
+<body>
+<h1 style="font-family: 'Source Sans Pro', sans-serif;font-size:65px;color:#FDFEFE;font-weight:700;text-align:center"> Html Code Interpreter</h1>
+<h3 style="text-align:center ;font-size:35px;color:#FDFEFE">Type Your Code Here!!!</h3>
+<span id="s2">
+<center><b>Enter the code..</center></b>
+</span>
+<br />
+
+ <textarea id="d3" rows="10" cols="9" onkeyup="lw()" style="width: 425px; height: 216px;"></textarea>
+<br />
+
+<span id="s1">
+<center><b>Here Is The Output...</center></b>
+<br />
+</span>
+<div id="d1">
+</div>
+<br />
+
+<center>
+<button id="btn"onclick="exit()" style="width:97px;background-color:#9C640C;height: 45px;text-align:center ;font-size:35px;color:#FDFEFE">EXIT</button>
+</center>
+
+
+
+
+
+</body>
+</html>
